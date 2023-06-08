@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #090909;
+    --blue-color: #35d6df;
+    --white-color: #ffffff;
+    --pink-color: #ff66f2;
+    --default-font: 'cyberpunk', sans-serif;
+    --text-font: 'Share Tech Mono', monospace;;
+    --text-links: 'metuo-bold', sans-serif;
+}
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('/fonts/eternal/eternal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo-bold';
+    src: url('/fonts/metuo/MetuoPersonalUse-Bold.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  
+body {
+    background-image: url(../images/background-image.jpg);
+    font-family: var(--text-font);
+    color:var(--white-color);
+}
+
+main {
+    width: 50%;
+    background-color: #090909cc;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 0px 20px var(--pink-color);
+    margin: 6% auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea > textarea, .form-labels > select {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-family: var(--text-font);
+    padding: 2%;
+}
+
+.textarea > label, .textarea > textarea {
+    margin-bottom: 1%;
+}
+
+.submitarea {
+    display: flex;
+    align-items: center;
+}
+
+.submitarea > input {
+    padding: 1%;
+    color: var(--white-color);
+    background-color: var(--background-color);
+    border: 1px solid  var(--white-color);
+    font-family: var(--text-font);
+    border-radius: 5px;
+}
+
+.submitarea > input:hover {
+    box-shadow: 0px 0px 10px var(--pink-color);
+}
+
+.form-labels {
+    margin: 1% auto;
+    width:100%
+}
+
+.form-labels > input {
+    width: 100%;
+    margin: 1% 0;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    padding: 1%;
+}
+/*HOVER E  FOCUS PARA OS INPUTS DO FORMS*/
+.form-labels > input:hover, .form-labels > input:focus, .textarea > textarea:hover, .textarea > textarea:focus, .form-labels > select:hover {
+    box-shadow: 0px 0px 10px var(--pink-color);
+}
+
+.socials {
+    width: 32px;
+}
+
+.social-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-container > div, h3 {
+    margin: 1% 0;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #090909;
+    --blue-color: #35d6df;
+    --white-color: #ffffff;
+    --pink-color: #ff66f2;
+    --default-font: 'cyberpunk', sans-serif;
+    --text-font: 'Share Tech Mono', monospace;;
+    --text-links: 'metuo-bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('/fonts/eternal/eternal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo-bold';
+    src: url('/fonts/metuo/MetuoPersonalUse-Bold.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.footer {
+    color:var(--white-color);
+    font-family: var(--text-links);
+    position: fixed;
+    bottom: 1%;
+    left: 44%;
+}

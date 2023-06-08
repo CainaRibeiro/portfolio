@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--AQUI COMEÇA O HEADER-->
+        <nav>
+            <section class="left-section">
+                <span class="span-name"><a class="links" id="home" href="#">Caina Ribeiro Dev</a></span>
+            </section>
+            <section class="right-section">
+                <a id="home" href="#" class="links">HOME</a>
+                <a id="about" href="#" class="links">SOBRE</a>
+                <a id="academic-formation" href="#" class="links">FORMAÇÃO</a>
+                <a id="contact" href="#" class="links">CONTATO</a>
+            </section>
+        </nav>
+        <!--AQUI TERMINA O HEADER-->
+    </header>
+    <!--AQUI COMEÇA O MAIN-->
+    <main>
+        <section class="left-main-about">
+            <h1>
+                Quem é Cainã Ribeiro?
+            </h1>
+            <p class="about">
+                Me chamo Cainã Martins Teixeira Ribeiro, nascido em Araruama, mas vivi minha vida inteira em Saquarema,
+                cidade que amo e não pretendo sair dela tão cedo. Sou formado em Engenharia Química, curso onde dediquei
+                6 anos e meio da minha vida, entre formação básica, pós graduação e mestrado, porém, após um ano e meio
+                de formado, procurando emprego por todo Brasil e sem conseguir nem ao menos uma entrevista de emprego,
+                finalmente desisti. Encantado com o mundo da tecnologia (o qual sempre tive uma afinidade), decidi
+                migrar de área e mergulhar fundo no mundo da programação. Em Junho de 2022 comecei meus estudos com o
+                básico: html, css e javascripit. Por coincidência (ou destino), a Universidade de Vassouras em parceria
+                com Saquarema, trouxe o curso de Engenharia de Software e bolsas para os moradores e acabei sendo
+                escolhido para
+                receber uma dessas bolsas e hoje estou terminando o segundo período, e graças universidade, hoje estou
+                no meu segundo estágio. Comecei na área de segurança da informação, onde tirei muito proveito dos 6
+                meses em que passei na área, absorvi muito conhecimento do supervisor e atuei como red team e purple
+                team leader. Hoje estou estagiando na área de desenvolvimento, ainda pela universidade, atuando como
+                desenvolvedor full stack com django, sempre tirando o maior proveito possível da oportunidade que poucos
+                possuem logo cedo na carreira.
+            </p>
+        </section>
+        <section class="right-main-about">
+
+        </section>
+    </main>
+    <!--AQUI TERMINA O MAIN E COMEÇA O FOOTER-->
+    <footer class="footer">
+        <span>&copy Developed by Caina Ribeiro</span>
+    </footer>
+    <!--AQUI COMEÇA O SCRIPT, DEIXEI NO ARQUIVO MESMO-->
+    <!--SCRIPT PARA COLOCAR EFEITO DE DIGITACAÇÃO NO TEXTO-->
+    <script>
+        function typeWrite(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = ' ';
+            textoArray.forEach(function (letra, i) {
+
+                setTimeout(function () {
+                    elemento.innerHTML += letra;
+                }, 25 * i)
+
+            });
+        }
+
+        const titulo = document.querySelector('.about');
+        typeWrite(titulo);
+        /*SCRIPT PARA TROCAR DE PAGINA*/
+        var home = window.document.querySelectorAll("#home")
+
+        home.forEach(link => {
+            link.addEventListener("click", function () {
+                window.location.href = "index.html";
+            })
+        });
+
+        var about = window.document.getElementById("about")
+
+        about.addEventListener("click", function () {
+            window.location.href = "about.html";
+        })
+
+        var contact = window.document.getElementById("contact")
+
+        contact.addEventListener("click", function () {
+            window.location.href = "contact.html";
+        })
+
+        var academic_formation = window.document.getElementById("academic-formation")
+
+        academic_formation.addEventListener("click", function () {
+            window.location.href = "academic-formation.html";
+        })
+    </script>
+</body>
+
+
+</html>

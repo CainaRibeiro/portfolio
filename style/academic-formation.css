@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #090909;
+    --blue-color: #35d6df;
+    --white-color: #ffffff;
+    --pink-color: #ff66f2;
+    --default-font: 'cyberpunk', sans-serif;
+    --text-font: 'Share Tech Mono', monospace;;
+    --text-links: 'metuo-bold', sans-serif;
+}
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('/fonts/eternal/eternal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo-bold';
+    src: url('/fonts/metuo/MetuoPersonalUse-Bold.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  
+body {
+    background-image: url(../images/background-image.jpg);
+    font-family: var(--text-font);
+    color:var(--white-color);
+}
+
+main {
+    width: 70%;
+    background-color: #090909e3;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 0px 20px var(--pink-color);
+    margin: 6% auto;
+    border-radius: 10px;
+}
+
+.top-main-academic {
+    margin: 1%;
+    display: flex;
+}
+
+.left-top-academic {
+    width: 50%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.left-top-academic > h1 {
+    margin: 1% 0;
+}
+
+.left-top-academic > p {
+    line-height:1.5em;
+    text-align: justify;
+}
+
+.right-top-academic {
+    width: 50%;
+}
+
+.list-item {
+    list-style:none;
+}
+
+.list-item::before {
+    content: "-   "
+}
+
+.bottom-main-academic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid var(--white-color);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1% 0;
+    box-shadow:0px -5px 5px -5px var(--pink-color)
+}

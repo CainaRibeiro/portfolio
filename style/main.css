@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #090909;
+    --blue-color: #35d6df;
+    --white-color: #ffffff;
+    --pink-color: #ff66f2;
+    --default-font: 'cyberpunk', sans-serif;
+    --text-font: 'Share Tech Mono', monospace;;
+    --text-links: 'metuo-bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('/fonts/eternal/eternal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo-bold';
+    src: url('/fonts/metuo/MetuoPersonalUse-Bold.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  
+body {
+    background-image: url(../images/background-image.jpg);
+    position: relative;
+}
+
+
+
+main {
+    width: 70%;
+    font-family: var(--text-font);
+    color: var(--white-color);
+    margin: 6% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-main {
+    width: 45%;
+    padding: 5%;
+}
+.left-main > h1 {
+    font-size: 2em
+}
+
+.left-main > p {
+    font-size: 1.2em;
+    margin-top: 5%;
+    text-align:justify;
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+.right-main {
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+
+img {
+    height: 400px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--pink-color);
+    border: 2px solid var(--white-color);
+    object-fit:cover;
+}

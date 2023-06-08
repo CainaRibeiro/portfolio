@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--AQUI COMEÇA O HEADER-->
+        <nav>
+            <section class="left-section">
+                <span class="span-name"><a class="links" id="home" href="#">Caina Ribeiro Dev</a></span>
+            </section>
+            <section class="right-section">
+                <a id="home" href="#" class="links">HOME</a>
+                <a id="about" href="#" class="links">SOBRE</a>
+                <a id="academic-formation" href="#" class="links">FORMAÇÃO</a>
+                <a id="contact" href="#" class="links">CONTATO</a>
+            </section>
+        </nav>
+        <!--AQUI TERMINA O HEADER-->
+    </header>
+    <!--AQUI COMEÇA O MAIN-->
+    <main class="content">
+        <section class="left-main">
+            <h1 class="home">
+                Seja bem-vindo!
+            </h1>
+            <p>
+                Me chamo Cainã Ribeiro, estudante de Engenharia de Software, entusiasta de segurança da informação e
+                futuro desenvolvedor.
+            </p>
+        </section>
+        <section class="right-main">
+            <img src="./images/caina.jpeg" alt="caina-ribeiro">
+        </section>
+    </main>
+    <!--AQUI ACABA O MAIN E COMEÇA O FOOTER-->
+    <footer class="footer">
+        <span>&copy Developed by Caina Ribeiro</span>
+    </footer>
+    <!--AQUI COMEÇA O SCRIPT, DEIXEI NO ARQUIVO MESMO-->
+    <script>
+        var home = window.document.querySelectorAll("#home")
+
+        home.forEach(link => {
+            link.addEventListener("click", function () {
+                window.location.href = "index.html";
+            })
+        });
+
+        var about = window.document.getElementById("about")
+
+        about.addEventListener("click", function () {
+            window.location.href = "about.html";
+        })
+
+        var contact = window.document.getElementById("contact")
+
+        contact.addEventListener("click", function () {
+            window.location.href = "contact.html";
+        })
+
+        var academic_formation = window.document.getElementById("academic-formation")
+
+        academic_formation.addEventListener("click", function () {
+            window.location.href = "academic-formation.html";
+        })
+    </script>
+</body>
+
+
+</html>

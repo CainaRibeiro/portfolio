@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('/fonts/eternal/eternal.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo';
+    src: url('/fonts/metuo/MetuoPersonalUse-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'metuo-bold';
+    src: url('/fonts/metuo/MetuoPersonalUse-Bold.otf') format('opentype');
+}
+  
+
+:root {
+    --background-color: #090909;
+    --blue-color: #35d6df;
+    --white-color: #ffffff;
+    --pink-color: #ff66f2;
+    --default-font: 'cyberpunk', sans-serif;
+    --text-font: 'metuo', sans-serif;
+    --text-links: 'metuo-bold', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.header {
+
+    border-bottom: 1px solid var(--white-color);
+    box-shadow: 1px 1px 10px var(--blue-color);
+    height: 10%;
+    background-color:rgba(0, 0, 0, 0.795);
+}
+
+nav {
+    display: flex;
+    color: var(--white-color);
+    height: 100%;
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.left-section > .span-name > .links {
+    text-shadow: 4px 5px 1px var(--pink-color);
+    font-size:2.3em;
+    color:var(--white-color);
+    text-decoration:none;
+    font-family: var(--default-font);
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-family: var(--text-links)
+}
+
+.right-section > .links {
+    text-decoration:none;
+    color: var(--white-color);
+    text-shadow: 3px 4px 1px var(--blue-color);
+    font-size: 1.5em;
+    
+}
+
+body {
+    background-image: url(/images/background-image.jpg);
+    position: relative;
+}
